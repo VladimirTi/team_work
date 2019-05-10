@@ -1,15 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="./styles/main.css">
-  </head>
-  <body>
-    <p id="avenir">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam eum quisq</p>
-    <p id="roboto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam eum quisq</p>
-    <p id="arial">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam eum quisq</p>
-    <script type="text/javascript" src="scripts/main.js"></script>
-  </body>
-</html>
 
+<head>
+  <meta charset="UTF-8">
+  <title>Airbnb</title>
+  <link rel="stylesheet" href="./styles/normalize.css">
+  <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+  <header class="header header__wrapper">
+    <a href="javascript:void(0)" class="link header__link link__logo">
+      <img src="images/airbnb-logo.svg" alt="alt" class="logo header__logo">
+    </a>
+    <nav class="navigation header__nav">
+      <a href="javascript:void(0)" class="header__link link">Become a host</a>
+      <a href="javascript:void(0)" class="header__link link">Trips</a>
+      <a href="javascript:void(0)" class="header__link link">Messages</a>
+      <a href="javascript:void(0)" class="link">
+        <img src="images/user-avatar.png" alt="alt" class="user-avatar header__user-avatar">
+      </a>
+    </nav>
+  </header>
+  <div class="appartment-interier-photo"></div>
+  <main class="main-content">
+    <section class="content-block content-block-description"></section>
+    <section class="content-block content-block-review"></section>
+    <section class="content-block content-block-host-information"></section>
+  </main>
+  <section class="book-form"></section>
+  <footer class="footer"></footer>
+  <script type="text/javascript" src="scripts/main.js"></script>
+</body>
+
+</html>
