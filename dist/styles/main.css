@@ -72,10 +72,48 @@ html {
       height: 30px; }
 
 .appartment-interier-photo {
-  width: 100vw;
+  width: 100%;
   height: 31vw;
   background: url(../images/interier-photo.jpg) center no-repeat, #ddc8b0;
   background-size: 100%; }
+
+.footer {
+  display: block;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0 -1px 0 #e1e7ed;
+          box-shadow: 0 -1px 0 #e1e7ed; }
+  .footer .footer__wrapper {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0 auto;
+    width: 900px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 44px 120px 46px 0; }
+    .footer .footer__wrapper .footer__section .footer__title {
+      font-family: "Avenir Heavy", sans-serif;
+      color: #3d4e61;
+      font-size: 16px;
+      line-height: 19px;
+      margin: 0;
+      margin-bottom: 23px; }
+    .footer .footer__wrapper .footer__section .footer__link {
+      color: #3d4e61;
+      font-size: 16px;
+      line-height: 19px; }
+    .footer .footer__wrapper .footer__section .footer__nav {
+      margin: 0; }
+      .footer .footer__wrapper .footer__section .footer__nav .list__item {
+        margin-top: 12px; }
+
+html {
+  width: 100%; }
 
 .link {
   display: block;
@@ -84,5 +122,10 @@ html {
 .logo {
   width: 30px;
   height: 30px; }
+
+.list {
+  padding: 0; }
+  .list .list__item {
+    list-style: none; }
 
 /*# sourceMappingURL=main.css.map */
