@@ -1,14 +1,15 @@
 @import "utils";
 @import "fonts";
 @import "typography";
-@import "header";
-@import "photo-container";
-@import "main-content";
-@import "footer";
+
+* {
+  box-sizing: border-box;
+}
 
 .link {
   display: block;
   text-decoration: none;
+  @include text-font;
 }
 
 .logo {
