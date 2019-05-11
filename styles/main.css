@@ -77,16 +77,12 @@ html {
   background: url(../images/interier-photo.jpg) center no-repeat, #ddc8b0;
   background-size: 100%; }
 
-
 .block {
-  width: 100%;
+  width: 900px;
   min-width: 900px;
   display: grid;
   grid-template-columns: 500px 330px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 40px; }
+  margin: 40px auto; }
   .block .content-block-description {
     color: #3d4e61;
     font-size: 16px;
@@ -163,10 +159,6 @@ html {
       margin: 0; }
       .footer .footer__wrapper .footer__section .footer__nav .list__item {
         margin-top: 12px; }
-
-html {
-  width: 100%; }
-
 
 .link {
   display: block;
