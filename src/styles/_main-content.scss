@@ -1,0 +1,60 @@
+.block {
+  width: 100%;
+  min-width: 900px;
+  display: grid;
+  grid-template-columns: 500px 330px;
+  justify-content: center;
+  margin-top: 40px;
+
+  .content-block-description {
+    color: $text-color;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+
+    .headline {
+      margin-top: 0;
+    }
+
+    .type-of-apartment {
+      color: #687c94;
+    }
+
+    .specifications-short {
+      width: 250px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .description {
+      line-height: 24px;
+    }
+
+    .amenitise-list {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: repeat();
+      justify-content: space-between;
+
+      p {
+        margin: 10px 0;
+      }
+    }
+
+    .amenitise-full-list {
+      background-color: inherit;
+      border: none;
+      margin-top: 15px 0 0;
+      padding: 0;
+      display: block;
+      font-weight: bold;
+    }
+  }
+
+  .red {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 300px;
+    background-color: red;
+  }
+}
