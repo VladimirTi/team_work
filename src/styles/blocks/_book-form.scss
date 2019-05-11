@@ -1,0 +1,50 @@
+.book-form__wrapper {
+  position: sticky;
+  top: $main-cont-grid-top-gap;
+  height: 320px;
+  padding: 30px;
+  border: 1px solid $book-form-border-color;
+  border-radius: $book-form-border-r;
+
+  .book-form {
+    .book-form__input {
+      display: block;
+      height: 50px;
+      margin: 0;
+      padding: 0;
+      border: none;
+      line-height: 48px;
+    }
+
+    .book-form__field {
+      padding-left: 17px;
+      color: $text-color;
+      border-radius: $book-form-border-r;
+      border: 1px solid $book-form-border-color;
+
+      &::placeholder {
+        color: $text-color;
+      }
+
+      &:nth-child(2) {
+        margin-top: 42px;
+      }
+
+      &:nth-child(3) {
+        margin-top: 16px;
+      }
+    }
+
+    .book-form__submit {
+      margin-top: 24px;
+      color: #fff;
+      background: $book-form-btn-color;
+      border-radius: 4px;
+      cursor: pointer;
+
+      &:hover {
+        background: $book-form-btn-color-hover;
+      }
+    }
+  }
+}

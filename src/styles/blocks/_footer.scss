@@ -1,11 +1,8 @@
 .footer {
   display: block;
-  width: 100%;
-  box-sizing: border-box;
   box-shadow: 0 -1px 0 #e1e7ed;
 
   .footer__wrapper {
-    box-sizing: border-box;
     margin: 0 auto;
     width: 900px;
     display: flex;
@@ -16,17 +13,9 @@
 
       .footer__title {
         font-family: "Avenir Heavy", sans-serif;
-        color: $text-color;
-        font-size: 16px;
-        line-height: 19px;
+        @include text-font;
         margin: 0;
         margin-bottom: 23px;
-      }
-
-      .footer__link {
-        color: $text-color;
-        font-size: 16px;
-        line-height: 19px;
       }
 
       .footer__nav {

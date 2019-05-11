@@ -1,3 +1,11 @@
 @import "utils/vars";
 @import "utils/mixins";
 @import "utils/extends";
+
+/* BLOCKS */
+
+@import "blocks/header";
+@import "blocks/photo-container";
+@import "blocks/main-content";
+@import "blocks/book-form";
+@import "blocks/footer";

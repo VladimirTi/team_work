@@ -1,6 +1,5 @@
-@mixin hover($_property, $_toValue) {
-  transition: #{$_property} 0.3s;
-  &:hover {
-    #{$_property}: $_toValue;
-  }
+@mixin tex-font {
+  color: $text-color;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
 }
