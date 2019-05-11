@@ -4,6 +4,7 @@
 @import "header";
 @import "photo-container";
 @import "main-content";
+@import "footer";
 
 .link {
   display: block;
@@ -13,4 +14,12 @@
 .logo {
   width: 30px;
   height: 30px;
+}
+
+.list {
+  padding: 0;
+
+  .list__item {
+    list-style: none;
+  }
 }
