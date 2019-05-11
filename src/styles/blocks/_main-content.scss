@@ -1,4 +1,4 @@
-.block {
+.main-content {
   width: 900px;
   display: grid;
   grid-template-columns: 1fr 330px;
@@ -47,10 +47,15 @@
     .amenitise-full-list {
       background-color: inherit;
       border: none;
-      margin-top: 15px 0 0;
+      margin: 15px 0 0;
       padding: 0;
       display: block;
       font-weight: bold;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 
@@ -85,6 +90,7 @@
       font-size: $smaller-font-size;
       line-height: $smaller-line-height;
     }
+
     .contact-host {
       width: 150px;
       height: 50px;
@@ -93,6 +99,11 @@
       border-radius: 4px;
       color: $btn-color;
       font-weight: bold;
+      cursor: pointer;
+
+      &:hover {
+        background: rgba($btn-color, 0.03);
+      }
     }
   }
 }
