@@ -27,4 +27,10 @@
       }
     }
   }
+
+  @media screen and (max-width: 900px) {
+    .footer__wrapper {
+      width: 100%;
+    }
+  }
 }

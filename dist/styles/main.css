@@ -134,6 +134,11 @@ h1 {
       .main-content .content-block-host-information .contact-host:hover {
         background: rgba(17, 132, 136, 0.03); }
 
+@media screen and (max-width: 900px) {
+  .main-content {
+    grid-template-columns: 100%;
+    width: 500px; } }
+
 .book-form__wrapper {
   position: -webkit-sticky;
   position: sticky;
@@ -178,6 +183,11 @@ h1 {
     .book-form__wrapper .book-form .book-form__submit:hover {
       background: #fd4851; }
 
+@media screen and (max-width: 900px) {
+  .book-form__wrapper {
+    width: 330px;
+    margin: 40px auto 0; } }
+
 .footer {
   display: block;
   -webkit-box-shadow: 0 -1px 0 #e1e7ed;
@@ -203,6 +213,9 @@ h1 {
       margin: 0; }
       .footer .footer__wrapper .footer__section .footer__nav .list__item {
         margin-top: 12px; }
+  @media screen and (max-width: 900px) {
+    .footer .footer__wrapper {
+      width: 100%; } }
 
 @font-face {
   font-family: "Roboto";
