@@ -3,6 +3,8 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Airbnb</title>
   <link rel="stylesheet" href="./styles/normalize.css">
   <link rel="stylesheet" href="./styles/main.css">
@@ -77,11 +79,11 @@
 
     <section class="book-form__wrapper">
       <form action="javascript:void(0)" class="book-form">
-        <strong class="book-form__price"><span class="book-price">25$</span> per night</strong>
+        <div class="book-form__price"><span class="book-price">25$</span> per night</div>
         <input placeholder="Date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"
           class="book-form__input book-form__field" required>
         <input type="number" placeholder="Guests" min="1" max="20" class="book-form__input book-form__field" required>
-        <input type="submit" value="Book" class="book-form__input book-form__submit">
+        <input type="button" value="Book" class="book-form__input book-form__submit">
       </form>
     </section>
   </main>

@@ -7,6 +7,7 @@
   border-radius: $book-form-border-r;
 
   .book-form {
+
     .book-form__input {
       display: block;
       width: 100%;
@@ -50,9 +51,54 @@
   }
 }
 
-@media screen and (max-width: 900px) {
+@media (max-width: 900px) {
   .book-form__wrapper {
-    width: 330px;
-    margin: 40px auto 0;
+    width: 100%;
+    position: fixed;
+    background: #fff;
+    padding: 0 50px;
+    top: calc(100% - 90px);
+    height: 90px;
+    margin-left: -$side-padding-900;
+
+    .book-form {
+      padding: 20px;
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-content: center;
+
+      .book-form__price {
+        line-height: 50px;
+        font-size: 1.5em;
+
+        .book-price {
+          font-weight: 900;
+        }
+      }
+
+      .book-form__field {
+        &:nth-child(2) {
+          display: none;
+        }
+
+        &:nth-child(3) {
+          display: none;
+        }
+      }
+
+      .book-form__submit {
+        margin: 0;
+        width: 160px;
+        font-size: 1.5em;
+      }
+    }
   }
+  @media (max-width: 600px) {
+    .book-form__wrapper {
+      padding: 0;
+      margin-left: -$side-padding-600;
+    }
+  }
+  
 }
