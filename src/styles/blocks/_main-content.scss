@@ -5,9 +5,7 @@
   column-gap: 90px;
   margin: $main-cont-grid-top-gap auto;
 
-  .content-block-description,
-  .content-block-review,
-  .content-block-host-information {
+  .content-block {
     color: $text-color;
     font-size: $base-font-size;
     line-height: $base-line-height;
@@ -77,8 +75,7 @@
 
     .user-name {
       margin: 10px 20px;
-      font-size: $smaller-font-size;
-      line-height: $smaller-line-height;
+      font-weight: bold;
     }
   }
 
@@ -118,6 +115,11 @@
   @media (max-width: 600px) {
     .main-content {
       padding: 0 $side-padding-600;
+    }
+    .description,
+    .review-text,
+    .host-description {
+      text-align: justify;
     }
   }
 }
