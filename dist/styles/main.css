@@ -1,6 +1,7 @@
 /* Header */
 /* Book-form */
 /* Main-Content */
+/* Responsive */
 h1 {
   font-family: "Roboto", sans-serif;
   font-weight: 400; }
@@ -17,6 +18,11 @@ h1 {
       -ms-flex-align: center;
           align-items: center;
   padding: 0 20px 0 26px; }
+  @media screen and (max-width: 500px) {
+    .header__wrapper {
+      padding: 0 10px; }
+      .header__wrapper .header__nav {
+        margin-left: 10px; } }
 
 .header {
   font-family: "Avenir Heavy", sans-serif;
@@ -53,6 +59,15 @@ h1 {
   height: 31vw;
   background: url(../images/interier-photo.jpg) center no-repeat, #ddc8b0;
   background-size: 100%; }
+
+@media screen and (max-width: 900px) {
+  .appartment-interier-photo {
+    height: 50vw; } }
+
+@media screen and (max-width: 400px) {
+  .appartment-interier-photo {
+    background-size: cover;
+    height: 80vw; } }
 
 .main-content {
   width: 900px;
@@ -137,7 +152,12 @@ h1 {
 @media screen and (max-width: 900px) {
   .main-content {
     grid-template-columns: 100%;
-    width: 500px; } }
+    width: 100%;
+    padding: 0 70px; } }
+
+@media screen and (max-width: 900px) and (max-width: 600px) {
+  .main-content {
+    padding: 0 20px; } }
 
 .book-form__wrapper {
   position: -webkit-sticky;
@@ -183,10 +203,44 @@ h1 {
     .book-form__wrapper .book-form .book-form__submit:hover {
       background: #fd4851; }
 
-@media screen and (max-width: 900px) {
+@media (max-width: 900px) {
   .book-form__wrapper {
-    width: 330px;
-    margin: 40px auto 0; } }
+    width: 100%;
+    position: fixed;
+    background: #fff;
+    padding: 0 50px;
+    top: calc(100% - 90px);
+    height: 90px;
+    margin-left: -70px; }
+    .book-form__wrapper .book-form {
+      padding: 20px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -ms-flex-line-pack: center;
+          align-content: center; }
+      .book-form__wrapper .book-form .book-form__price {
+        line-height: 50px;
+        font-size: 1.5em; }
+        .book-form__wrapper .book-form .book-form__price .book-price {
+          font-weight: 900; }
+      .book-form__wrapper .book-form .book-form__field:nth-child(2) {
+        display: none; }
+      .book-form__wrapper .book-form .book-form__field:nth-child(3) {
+        display: none; }
+      .book-form__wrapper .book-form .book-form__submit {
+        margin: 0;
+        width: 160px;
+        font-size: 1.5em; } }
+
+@media (max-width: 900px) and (max-width: 600px) {
+  .book-form__wrapper {
+    padding: 0;
+    margin-left: -20px; } }
 
 .footer {
   display: block;
@@ -215,7 +269,13 @@ h1 {
         margin-top: 12px; }
   @media screen and (max-width: 900px) {
     .footer .footer__wrapper {
-      width: 100%; } }
+      width: 100%;
+      margin-bottom: 90px;
+      padding: 20px 70px; } }
+
+@media screen and (max-width: 900px) and (max-width: 600px) {
+  .footer .footer__wrapper {
+    padding: 10px 20px; } }
 
 @font-face {
   font-family: "Roboto";
@@ -242,6 +302,9 @@ html {
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
+
+body {
+  min-width: 360px; }
 
 .link {
   display: block;

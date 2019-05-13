@@ -3,3 +3,16 @@
   background: url(../images/interier-photo.jpg) center no-repeat, #ddc8b0;
   background-size: 100%;
 }
+
+@media screen and (max-width: 900px) {
+  .appartment-interier-photo {
+    height: 50vw;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .appartment-interier-photo {
+    background-size: cover;
+    height: 80vw;
+  }
+}
