@@ -119,7 +119,7 @@ h1 {
     .main-content .content-block-review .smaller-headline {
       font-family: "Roboto", sans-serif; }
     .main-content .content-block-review .user-photo {
-      float: left;
+      float: left; /* try to use flex or grid */
       width: 50px;
       height: 50px;
       border-radius: 50%;
@@ -294,7 +294,7 @@ h1 {
   font-family: "Avenir Heavy";
   src: url("../fonts/Avenir-Heavy.ttf") format("truetype");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal; } /* font-style:bold */
 
 html {
   font-family: "Avenir", sans-serif;
