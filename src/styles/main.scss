@@ -1,6 +1,7 @@
 @import "utils";
 @import "fonts";
 @import "typography";
+@import "blocks";
 
 * {
   box-sizing: border-box;
@@ -14,6 +15,13 @@ body {
   display: block;
   text-decoration: none;
   @include text-font;
+
+  &:focus {
+    outline: none;
+    box-sizing: border-box;
+    border: 1px solid $btn-color;
+    border-radius: 4px;
+  }
 }
 
 .logo {

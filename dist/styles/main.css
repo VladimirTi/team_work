@@ -6,7 +6,28 @@ h1 {
   font-family: "Roboto", sans-serif;
   font-weight: 400; }
 
-/* BLOCKS */
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Avenir";
+  src: url("../fonts/Avenir-Book.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Avenir Heavy";
+  src: url("../fonts/Avenir-Heavy.ttf") format("truetype");
+  font-weight: normal;
+  font-style: bold; }
+
+html {
+  font-family: "Avenir", sans-serif;
+  color: #3d4e61; }
+
 .header__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -42,7 +63,7 @@ h1 {
     width: 374px; }
     .header .header__nav .header__link {
       position: relative; }
-    .header .header__nav .header__link:hover:after {
+    .header .header__nav .header__link:hover::after {
       content: "";
       display: block;
       height: 2px;
@@ -67,7 +88,8 @@ h1 {
 @media screen and (max-width: 400px) {
   .appartment-interier-photo {
     background-size: cover;
-    height: 80vw; } }
+    height: 80vw;
+    min-width: 360px; } }
 
 .main-content {
   width: 900px;
@@ -189,6 +211,10 @@ h1 {
     padding: 0;
     border: none;
     line-height: 48px; }
+  .book-form__wrapper .book-form .book-form__input:focus {
+    outline: none;
+    -webkit-box-shadow: 0 2px 4px #e1e7ed;
+            box-shadow: 0 2px 4px #e1e7ed; }
   .book-form__wrapper .book-form .book-form__field {
     padding-left: 17px;
     color: #3d4e61;
@@ -220,6 +246,7 @@ h1 {
 @media (max-width: 900px) {
   .book-form__wrapper {
     width: 100%;
+    min-width: 360px;
     position: fixed;
     background: #fff;
     padding: 0 50px;
@@ -239,7 +266,7 @@ h1 {
           align-content: center; }
       .book-form__wrapper .book-form .book-form__price {
         line-height: 50px;
-        font-size: 1.5em; }
+        font-size: 1.3em; }
         .book-form__wrapper .book-form .book-form__price .book-price {
           font-weight: 900; }
       .book-form__wrapper .book-form .book-form__field:nth-child(2) {
@@ -291,28 +318,6 @@ h1 {
   .footer .footer__wrapper {
     padding: 10px 20px; } }
 
-@font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Roboto-Regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: "Avenir";
-  src: url("../fonts/Avenir-Book.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: "Avenir Heavy";
-  src: url("../fonts/Avenir-Heavy.ttf") format("truetype");
-  font-weight: normal;
-  font-style: bold; }
-
-html {
-  font-family: "Avenir", sans-serif;
-  color: #3d4e61; }
-
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
@@ -326,6 +331,12 @@ body {
   color: #3d4e61;
   font-size: 16px;
   line-height: 19px; }
+  .link:focus {
+    outline: none;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border: 1px solid #118488;
+    border-radius: 4px; }
 
 .logo {
   width: 30px;

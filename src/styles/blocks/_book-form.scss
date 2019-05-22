@@ -18,6 +18,11 @@
       line-height: 48px;
     }
 
+    .book-form__input:focus {
+      outline: none;
+      box-shadow: 0 2px 4px #e1e7ed;
+    }
+
     .book-form__field {
       padding-left: 17px;
       color: $text-color;
@@ -54,6 +59,7 @@
 @media (max-width: 900px) {
   .book-form__wrapper {
     width: 100%;
+    min-width: 360px;
     position: fixed;
     background: #fff;
     padding: 0 50px;
@@ -70,7 +76,7 @@
 
       .book-form__price {
         line-height: 50px;
-        font-size: 1.5em;
+        font-size: 1.3em;
 
         .book-price {
           font-weight: 900;
@@ -94,6 +100,7 @@
       }
     }
   }
+
   @media (max-width: 600px) {
     .book-form__wrapper {
       padding: 0;
